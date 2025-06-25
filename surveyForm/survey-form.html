@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Help us improve</p>
+        <div id="background">
+            <form id="survey-form">
+                <fieldset>
+                    <label for="name" id="name-label">Full Name:
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </label>
+                    <label for="email" id="email-label">E-mail:  
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </label>
+                    <label for="number" id="number-label">Age: 
+                        <input type="number" id="number" name="age" min="13" max="100" placeholder="Age">
+                    </label>
+                    <label for="dropdown" id="dropdown-label">What course are you?
+                        <select id="dropdown" name="course">
+                            <option value="">Select Course</option>
+                            <option value="1">Computer Science</option>
+                            <option value="2">EMC</option>
+                            <option value="3">NETAD</option>
+                            <option value="4">WEBDEV</option>
+                            <option value="5">Others</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Year Level</legend>
+                    <label for="first" id="first-level" class="inline">
+                        <input class="inline" type="radio" id="first" value="first" name="year-level">First Year
+                    </label><br>
+                    <label class="inline" for="second" id="second-level">
+                        <input class="inline" type="radio" id="second" value="second" name="year-level">Second Year
+                    </label><br>
+                    <label class="inline" for="third" id="third-level">
+                        <input class="inline" type="radio" id="third" value="third" name="year-level">Third Year
+                    </label><br>
+                    <label class="inline" for="fourth" id="fourth-level">
+                        <input class="inline" type="radio" id="fourth" value="fourth" name="year-level">Fourth Year
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label class="inline" for="mac" id="mac-label">
+                        <input class="inline" type="checkbox" id="mac" value="mac">Mac Laboratory
+                    </label><br>
+                    <label class="inline" for="ai" id="ai-label">
+                        <input class="inline" type="checkbox" id="ai" value="ai">A.I. Laboratory
+                    </label><br>
+                    <label class="inline" for="mgn" id="mgn-label">
+                        <input class="inline" type="checkbox" id="mgn" value="mgn">MGN Laboratory
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="suggestions" id="suggestions-label">Suggestion Box:
+                        <textarea name="suggestions" id="suggestions" placeholder="Enter your suggestions here"></textarea>
+                    </label>
+                    <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
