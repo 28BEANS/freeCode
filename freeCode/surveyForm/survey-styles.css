@@ -1,0 +1,112 @@
+@font-face {
+    font-family: ParaType;
+    src: url(fonts/PTSerif-Regular.ttf);
+}
+@font-face {
+    font-family: DMSerif;
+    src: url(fonts/DMSerifDisplay-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-image: url(img/hau.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+label, input, select, textarea{
+    display: block;
+    margin-top: 7px;
+}
+label, legend{
+    margin-top: 10px;
+    color: rgb(230, 216, 197);
+    font-family: ParaType;
+    font-size: 20px;
+}
+fieldset{
+    padding: 20px;
+    width: auto;
+    height: auto;
+    border: none;
+    margin: 0;
+}
+form{
+    width: 45vw;
+    min-width: 30rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inline{
+    display: inline;
+}
+#name, #number, #email, #suggestions, #dropdown, #submit{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+#name, #number, #email, #dropdown, textarea{
+    padding: 10px;
+}
+#background{
+    background-color: rgba(128, 0, 0, 0.653);
+    padding: 10px;
+}
+#submit{
+    margin-top: 10px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(237, 209, 48);
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin-right: 15px;
+}
+
+#suggestions{
+    min-height: 8rem;
+    resize: vertical;
+}
+
+input, select, textarea{
+    background-color: rgb(255, 246, 235);
+    font-size: 18px;
+
+}
+
+#suggestions-label{
+    margin-top: -15px;
+}
+
+#name-label, 
+#number-label, 
+#email-label, 
+#dropdown-label, 
+#suggestions-label,
+legend{
+    font-size: 22px;
+}
+
+#title{
+    font-family: ParaType;
+    font-weight: bold;
+    color: rgb(207, 155, 0);
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+    text-shadow: 0 0 10px black;
+}
+
+#description{
+    font-family: ParaType;
+    font-style: italic;
+    color: rgb(207, 155, 0);
+    margin-bottom: 2rem;
+    margin-top: -0.5rem;
+    font-size: 20px;
+    text-shadow: 0 0 10px black;
+}
