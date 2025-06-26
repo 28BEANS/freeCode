@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Help us improve</p>
+        <h1 id="title">Annual School of Computing Survey Form</h1>
+        <p id="description">Help us improve our facilities</p>
         <div id="background">
             <form id="survey-form">
                 <fieldset>
@@ -22,7 +22,7 @@
                     <label for="number" id="number-label">Age: 
                         <input type="number" id="number" name="age" min="13" max="100" placeholder="Age">
                     </label>
-                    <label for="dropdown" id="dropdown-label">What course are you?
+                    <label for="dropdown" id="dropdown-label">What is your course?
                         <select id="dropdown" name="course">
                             <option value="">Select Course</option>
                             <option value="1">Computer Science</option>
@@ -33,10 +33,11 @@
                         </select>
                     </label>
                 </fieldset>
+                <hr>
                 <fieldset>
-                    <legend>Year Level</legend>
+                    <legend>What is your year level?</legend>
                     <label for="first" id="first-level" class="inline">
-                        <input class="inline" type="radio" id="first" value="first" name="year-level">First Year
+                        <input class="inline" type="radio" id="first" value="first" name="year-level" checked>First Year
                     </label><br>
                     <label class="inline" for="second" id="second-level">
                         <input class="inline" type="radio" id="second" value="second" name="year-level">Second Year
@@ -48,7 +49,9 @@
                         <input class="inline" type="radio" id="fourth" value="fourth" name="year-level">Fourth Year
                     </label>
                 </fieldset>
-                <fieldset>
+                <hr>
+                <fieldset> 
+                    <legend>What facilities do you use?</legend>
                     <label class="inline" for="mac" id="mac-label">
                         <input class="inline" type="checkbox" id="mac" value="mac">Mac Laboratory
                     </label><br>
@@ -59,11 +62,12 @@
                         <input class="inline" type="checkbox" id="mgn" value="mgn">MGN Laboratory
                     </label>
                 </fieldset>
+                <hr>
                 <fieldset>
-                    <label for="suggestions" id="suggestions-label">Suggestion Box:
+                    <label for="suggestions" id="suggestions-label">How can we improve our facilities?
                         <textarea name="suggestions" id="suggestions" placeholder="Enter your suggestions here"></textarea>
                     </label>
-                    <input type="submit" name="submit" id="submit">
+                    <input type="submit" name="submit" id="submit" value="Submit">
                 </fieldset>
             </form>
         </div>
